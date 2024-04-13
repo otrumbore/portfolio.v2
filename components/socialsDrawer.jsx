@@ -43,13 +43,22 @@ const SocialsDrawer = () => {
 							<DrawerDescription className='mt-4'>
 								<ul className='flex justify-center items-center gap-14 text-white'>
 									<li>
-										<FaLinkedinIn size={30} />
+										<a
+											href='https://www.linkedin.com/in/odnel-trumbore'
+											target='_blank'
+										>
+											<FaLinkedinIn size={30} />
+										</a>
 									</li>
 									<li>
-										<FaGithub size={30} />
+										<a href='https://www.github.com/otrumbore' target='_blank'>
+											<FaGithub size={30} />
+										</a>
 									</li>
 									<li>
-										<MdAlternateEmail size={30} />
+										<a href='mailto:otrumbore@gmail.com' target='_blank'>
+											<MdAlternateEmail size={30} />
+										</a>
 									</li>
 								</ul>
 							</DrawerDescription>
