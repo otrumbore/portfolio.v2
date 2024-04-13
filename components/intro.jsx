@@ -23,7 +23,7 @@ const Intro = () => {
 			<h1
 				className={`${introFont.className} text-center text-6xl font-extrabold mb-16`}
 			>
-				<span className='sm:hidden'>Hey, I'm Odnel</span>
+				<span className='sm:hidden'>Hi, I'm Odnel</span>
 				<span className='hidden sm:block'>Hi, I'm Odnel Trumbore</span>
 			</h1>
 
