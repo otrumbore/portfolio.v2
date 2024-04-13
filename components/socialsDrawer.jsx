@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { IoShareSocialSharp } from 'react-icons/io5';
+import { IoLinkSharp } from 'react-icons/io5';
 import { Button } from './ui/button';
 import {
 	Drawer,
@@ -33,7 +33,7 @@ const SocialsDrawer = () => {
 			>
 				<Drawer onClose={toggleSocialDrawerBtn}>
 					<DrawerTrigger>
-						<IoShareSocialSharp onClick={toggleSocialDrawerBtn} size={30} />
+						<IoLinkSharp onClick={toggleSocialDrawerBtn} size={30} />
 					</DrawerTrigger>
 					<DrawerContent className='bg-gray-800 text-white'>
 						<DrawerHeader>
