@@ -5,6 +5,7 @@ import Socials from '@/components/socials';
 import HeroImage from '@/public/hero.webp';
 import SocialsDrawer from '../components/socialsDrawer';
 import Intro from '@/components/intro';
+import Footer from '../components/footer';
 
 const font = Roboto({ subsets: ['latin'], weight: ['400'] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
 					</div>
 					<div className=''>{children}</div>
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);
