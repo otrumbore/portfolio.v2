@@ -1,10 +1,7 @@
-import Intro from '@/components/intro';
-
 export default function Home() {
 	return (
-		<main className=''>
-			<Intro />
+		<div className=''>
 			<div>Testing</div>
-		</main>
+		</div>
 	);
 }
