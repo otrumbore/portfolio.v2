@@ -20,7 +20,7 @@ const Header = () => {
 	return (
 		<header className='z-[999] relative flex justify-center'>
 			<motion.div
-				className='fixed top-4 px-4 lg:pr-10 lg:pl-8 w-[95%] lg:w-[98%] h-[5rem] bg-zinc-100 bg-opacity-80 rounded-xl'
+				className='fixed top-4 px-4 lg:pr-10 lg:pl-8 w-[95%] lg:w-[98%] h-[5rem] bg-gray-800 text-white bg-opacity-80 rounded-xl'
 				initial={{ y: -100 }}
 				animate={{ y: isVisible ? 0 : -100 }}
 				transition={{ type: 'spring', damping: 30, stiffness: 100 }}
@@ -31,7 +31,7 @@ const Header = () => {
 							<AvatarImage src='https://avatars.githubusercontent.com/u/64494127?v=4' />
 							<AvatarFallback>OT</AvatarFallback>
 						</Avatar>
-						<p className='hidden pl-4 text-xl'>Odnel Trumbore</p>
+						<p className='hidden sm:block pl-4 text-xl'>Odnel Trumbore</p>
 						<p className='pl-4 text-xl sm:hidden font-bold'>Odnel T.</p>
 					</div>
 					<nav className='flex items-center text-lg'>

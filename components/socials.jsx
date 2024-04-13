@@ -20,7 +20,7 @@ const Socials = () => {
 	return (
 		<div className='hidden lg:block z-[999] fixed top-[40%] left-3'>
 			<motion.div
-				className='w-[4rem] h-[12rem] bg-zinc-100 bg-opacity-80 rounded-sm'
+				className='w-[4rem] h-[12rem] bg-gray-800 text-white bg-opacity-80 rounded-sm'
 				initial={{ x: -100 }} // Initial position (off-screen from the left)
 				animate={{ x: isVisible ? 0 : -100 }} // Final position (slide in from the left)
 				transition={{ type: 'spring', damping: 30, stiffness: 100 }}

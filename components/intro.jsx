@@ -15,23 +15,26 @@ const Intro = () => {
 	}, []);
 	return (
 		<motion.div
-			initial={{ opacity: 0 }} // Initial opacity (completely transparent)
-			animate={{ opacity: isVisible ? 1 : 0 }} // Final opacity (fade in)
-			transition={{ duration: 0.75 }} // Transition duration
+			initial={{ opacity: 0 }}
+			animate={{ opacity: isVisible ? 1 : 0 }}
+			transition={{ duration: 0.75 }}
 			className='flex flex-col justify-center items-center h-screen'
 		>
 			<h1
 				className={`${introFont.className} text-center text-6xl font-extrabold mb-16`}
 			>
-				Hey, I'm Odnel Trumbore
+				<span className='sm:hidden'>Hey, I'm Odnel</span>
+				<span className='hidden sm:block'>Hey, I'm Odnel Trumbore</span>
 			</h1>
 
-			<p className='text-2xl w-1/3 mb-16'>
-				A Result-Oriented Web Developer building and managing Websites and Web
-				Applications that leads to the success of the overall product
+			<p className='text-2xl px-4 w-full text-center sm:w-1/2 mb-16'>
+				As a dedicated Web Developer, I specialize in crafting and optimizing
+				dynamic websites and web applications, driven by a passion for
+				delivering innovative digital solutions that elevate user experiences
+				and drive tangible results.
 			</p>
 
-			<Button variant='default' size={'intro'} className='text-lg'>
+			<Button variant='main' size={'intro'} className='text-lg'>
 				Projects
 			</Button>
 		</motion.div>
