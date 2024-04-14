@@ -1,8 +1,13 @@
 'use client';
 
+import { Oswald } from 'next/font/google';
 import React, { useState, useEffect } from 'react';
+import { buttonVariants } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
+
+const headingFont = Oswald({ subsets: ['latin'], weight: ['600'] });
 
 const About = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -19,6 +24,7 @@ const About = () => {
 		'Node.js',
 		'PHP',
 		'Git',
+		'Tailwind',
 	];
 
 	useEffect(() => {
@@ -29,13 +35,15 @@ const About = () => {
 
 	return (
 		<div name='about' id='about' className='relative'>
-			<div ref={ref} className='p-8 bg-cyan-50 min-h-screen h-auto'>
+			<div ref={ref} className='p-8 pt-24 bg-cyan-50 min-h-screen h-auto'>
 				<motion.div
-					initial={{ opacity: 0, y: -50 }} // Initial opacity and y position (above)
-					animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }} // Fade in when isVisible is true
-					transition={{ duration: 0.5 }} // Transition duration
+					initial={{ opacity: 0, y: -50 }}
+					animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }}
+					transition={{ duration: 0.5 }}
 				>
-					<h3 className='text-3xl text-center'>About</h3>
+					<h2 className={`${headingFont.className} text-5xl text-center`}>
+						About
+					</h2>
 					<span className='w-full flex justify-center p-4'>
 						<hr className='border-4 w-[4rem] border-gray-800 rounded-lg' />
 					</span>
@@ -74,6 +82,19 @@ const About = () => {
 										my skills, learn, and advance professionally. If you have a
 										fitting opportunity, I'm eager to hear from you.
 									</p>
+									<Link
+										to={'contact'}
+										offset={-100}
+										smooth={true}
+										duration={500}
+										className={buttonVariants({
+											variant: 'main',
+											size: 'intro',
+											className: 'mt-14 text-xl w-full hover:cursor-pointer',
+										})}
+									>
+										Get in touch!
+									</Link>
 								</div>
 								<div className='w-full'>
 									<h5 className='text-2xl mb-8 font-bold'>Skills...</h5>
