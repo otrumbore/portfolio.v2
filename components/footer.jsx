@@ -11,7 +11,7 @@ import { MdAlternateEmail } from 'react-icons/md';
 const Footer = () => {
 	return (
 		<footer className='w-full flex justify-center bg-gray-800 h-auto lg:h-[20rem] bg-opacity-80 p-4'>
-			<div className='flex flex-col justify-evenly w-2/3 h-full'>
+			<div className='flex flex-col justify-evenly w-full lg:w-2/3 h-full'>
 				<div className='flex flex-col text-center lg:text-left lg:flex-row justify-between text-gray-200'>
 					<div className='w-full lg:w-1/2 space-y-2'>
 						<h6 className='text-xl font-semibold'>Odnel Trumbore</h6>
