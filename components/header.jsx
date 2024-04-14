@@ -54,7 +54,7 @@ const Header = () => {
 								<li key={item.id}>
 									<Link
 										to={item.link}
-										offset={-100}
+										offset={-10}
 										smooth={true}
 										duration={500}
 										className='hover:underline underline-offset-8 hover:cursor-pointer'
@@ -96,7 +96,7 @@ const Header = () => {
 											<Link
 												to={item.link}
 												onClick={toggleMobileMenu}
-												offset={-100}
+												offset={-10}
 												smooth={true}
 												duration={500}
 											>

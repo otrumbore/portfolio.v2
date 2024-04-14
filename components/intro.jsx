@@ -2,8 +2,9 @@
 
 import { Oswald } from 'next/font/google';
 import React, { useEffect, useState } from 'react';
-import { Button } from './ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const introFont = Oswald({ subsets: ['latin'], weight: ['600'] });
 
@@ -34,10 +35,19 @@ const Intro = () => {
 				delivering innovative digital solutions that elevate user experiences
 				and drive tangible results.
 			</p>
-
-			<Button variant='main' size={'intro'} className='text-lg'>
+			<Link
+				to={'projects'}
+				offset={-100}
+				smooth={true}
+				duration={500}
+				className={buttonVariants({
+					variant: 'main',
+					size: 'intro',
+					className: 'text-xl hover:cursor-pointer',
+				})}
+			>
 				Projects
-			</Button>
+			</Link>
 		</motion.div>
 	);
 };
