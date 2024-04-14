@@ -89,7 +89,9 @@ const Contact = () => {
 
 					<div className='w-full flex justify-center'>
 						<div className='w-full p-4 2xl:w-1/2 flex flex-col justify-center items-center'>
-							<p className='text-center mb-8 text-xl'>Let's get in touch!</p>
+							<p className='text-center mb-8 text-xl'>
+								Let&apos;s get in touch!
+							</p>
 							<form
 								onSubmit={handleSubmit}
 								className='w-full lg:w-2/3 flex flex-col gap-6'
