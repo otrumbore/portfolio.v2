@@ -49,7 +49,7 @@ const About = () => {
 					</span>
 
 					<div className='w-full flex justify-center'>
-						<div className='w-full p-4 lg:w-1/2'>
+						<div className='w-full p-4 2xl:w-2/3'>
 							<p className='text-center mb-8 text-xl'>
 								Explore this section for additional insights into my background,
 								expertise, and current proficiencies, primarily focusing on
@@ -68,19 +68,19 @@ const About = () => {
 										<br />
 										Additionally, I enjoy sharing insights gleaned from my years
 										of experience in web development with the broader developer
-										community. Connect with me on{' '}
+										community. Connect with me on
 										<a
 											href='https://www.linkedin.com/in/odnel-trumbore'
 											className='underline underline-offset-4 text-slate-700 font-semibold'
 										>
 											LinkedIn
-										</a>{' '}
+										</a>
 										for valuable content on web development and programming.
 										<br />
 										<br />
-										I'm actively seeking new job opportunities where I can apply
-										my skills, learn, and advance professionally. If you have a
-										fitting opportunity, I'm eager to hear from you.
+										I&apos;m actively seeking new job opportunities where I can
+										apply my skills, learn, and advance professionally. If you
+										have a fitting opportunity, I&apos;m eager to hear from you.
 									</p>
 									<Link
 										to={'contact'}

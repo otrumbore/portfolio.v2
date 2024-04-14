@@ -18,13 +18,14 @@ const Socials = () => {
 		setIsVisible(true);
 	}, []);
 	return (
-		<div className='hidden lg:block z-[999] fixed top-[40%] left-3'>
+		<div className='hidden lg:block max-xl:hover:left-0 z-[999] fixed top-[40%] max-xl:-left-12 left-3 transform transition-all duration-300 ease-in-out'>
 			<motion.div
-				className='w-[4rem] h-[12rem] bg-gray-800 text-white bg-opacity-80 rounded-sm'
+				className='relative w-[4rem] h-[12rem] bg-gray-800 text-white bg-opacity-80 rounded-sm group'
 				initial={{ x: -100 }} // Initial position (off-screen from the left)
 				animate={{ x: isVisible ? 0 : -100 }} // Final position (slide in from the left)
 				transition={{ type: 'spring', damping: 30, stiffness: 100 }}
 			>
+				<hr className='absolute xl:hidden right-2 top-[4.5rem] flex flex-col items-center border-2 h-11 group-hover:hidden'></hr>
 				<TooltipProvider>
 					<ul className='flex flex-col justify-center items-center space-y-1 pt-4'>
 						<Tooltip>
