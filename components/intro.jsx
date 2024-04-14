@@ -15,6 +15,7 @@ const Intro = () => {
 	}, []);
 	return (
 		<motion.div
+			name='home'
 			initial={{ opacity: 0 }}
 			animate={{ opacity: isVisible ? 1 : 0 }}
 			transition={{ duration: 0.75 }}
