@@ -44,7 +44,7 @@ const Projects = () => {
 							<p className='text-center mb-8 text-2xl font-semibold'>
 								Professional Projects
 							</p>
-							<div className='w-full flex flex-col lg:flex-row lg:justify-between gap-6'>
+							<div className='w-full flex flex-col items-center lg:flex-row lg:justify-between gap-6'>
 								<div className='flex flex-col'>
 									<h4 className='text-center text-xl font-semibold'>
 										<a href='https://louisascraftycorner.com' target='_blank'>
@@ -67,32 +67,10 @@ const Projects = () => {
 
 										<div className='mt-4 flex flex-col gap-4 w-full items-center justify-center'>
 											<p>E-Commerce Store</p>
-											<p className='w-full text-center'>
+											<p className='text-center'>
 												<span className='font-semibold'>Tech Stack: </span>
 												MERN Stack: MongoDB, Express.js, React.js, Node.js with
 												Tailwind
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className='flex flex-col'>
-									<h4 className='text-center text-xl font-semibold'>
-										<a href='#' target='_blank'></a>
-									</h4>
-									<div className='flex flex-col lg:flex-col'>
-										<a href='#' target='_blank' className='hover:scale-110'>
-											{/* <Image
-												src={LCCImg}
-												width={500}
-												height={500}
-												alt='Picture of the author'
-											/> */}
-										</a>
-
-										<div className='mt-4 flex flex-col gap-4 w-full items-center justify-center'>
-											<p></p>
-											<p className='w-full text-center'>
-												<span className='font-semibold'></span>
 											</p>
 										</div>
 									</div>
@@ -103,7 +81,7 @@ const Projects = () => {
 							<p className='text-center mb-8 text-2xl font-semibold'>
 								Personal Projects
 							</p>
-							<div className='w-full flex flex-col lg:flex-row lg:justify-between gap-6'>
+							<div className='w-full flex flex-col items-center lg:flex-row lg:justify-between gap-6'>
 								<div className='flex flex-col'>
 									<h4 className='text-center text-xl font-semibold'>
 										Portfolio V2
@@ -117,7 +95,7 @@ const Projects = () => {
 										/>
 										<div className='mt-4 flex flex-col gap-4 w-full items-center justify-center'>
 											<p>New portfolio you are currently viewing</p>
-											<p className='w-full text-center'>
+											<p className='text-center'>
 												<span className='font-semibold'>Tech Stack: </span>
 												Next.js, Tailwind, Shadcn UI, Framer Motion
 											</p>
@@ -142,7 +120,7 @@ const Projects = () => {
 										</a>
 										<div className='mt-4 flex flex-col gap-4 w-full items-center justify-center'>
 											<p>My original and first portfolio.</p>
-											<p className='w-full text-center'>
+											<p className='text-center'>
 												<span className='font-semibold'>Tech Stack: </span>
 												React, Tailwind
 											</p>
