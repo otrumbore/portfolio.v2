@@ -126,15 +126,20 @@ const Projects = () => {
 								</div>
 								<div className='flex flex-col'>
 									<h4 className='text-center text-xl font-semibold'>
-										Portfolio V1
+										<a href='http://odneltrumbore.netlify.app' target='_blank'>
+											Portfolio V1
+										</a>
 									</h4>
 									<div className='flex flex-col lg:flex-col'>
-										<Image
-											src={PortfolioV1Img}
-											width={500}
-											height={500}
-											alt='Picture of the author'
-										/>
+										<a href='http://odneltrumbore.netlify.app' target='_blank'>
+											<Image
+												src={PortfolioV1Img}
+												width={500}
+												height={500}
+												alt='Picture of the author'
+												className='hover:scale-110'
+											/>
+										</a>
 										<div className='mt-4 flex flex-col gap-4 w-full items-center justify-center'>
 											<p>My original and first portfolio.</p>
 											<p className='w-full text-center'>
