@@ -9,7 +9,7 @@ import Image from 'next/image';
 //Images for projects
 import LCCImg from '@/public/project_imgs/Project_LCC_W_Mobile.png';
 import PortfolioV1Img from '@/public/project_imgs/Project_Portfolio_V1.png';
-//import PortfolioV2Img from '@/public/project_imgs/Project_Portfolio_V2.png';
+import PortfolioV2Img from '@/public/project_imgs/Project_Portfolio_V2.png';
 
 const headingFont = Oswald({ subsets: ['latin'], weight: ['600'] });
 
