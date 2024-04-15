@@ -7,9 +7,9 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 //Images for projects
-import LCCImg from '@/project_imgs/Project_LCC_W_Mobile.png';
-import PortfolioV1Img from '@/project_imgs/Project_Portfolio_V1.png';
-import PortfolioV2Img from '@/project_imgs/Project_Portfolio_V2.png';
+import LCCImg from '@/public/project_imgs/Project_LCC_W_Mobile.png';
+import PortfolioV1Img from '@/public/project_imgs/Project_Portfolio_V1.png';
+//import PortfolioV2Img from '@/public/project_imgs/Project_Portfolio_V2.png';
 
 const headingFont = Oswald({ subsets: ['latin'], weight: ['600'] });
 
@@ -110,7 +110,7 @@ const Projects = () => {
 									</h4>
 									<div className='flex flex-col lg:flex-col'>
 										<Image
-											src={PortfolioV2Img}
+											src={PortfolioV1Img}
 											width={500}
 											height={500}
 											alt='Picture of the author'
