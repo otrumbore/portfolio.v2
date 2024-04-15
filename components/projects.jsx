@@ -110,7 +110,7 @@ const Projects = () => {
 									</h4>
 									<div className='flex flex-col lg:flex-col'>
 										<Image
-											src={PortfolioV1Img}
+											src={PortfolioV2Img}
 											width={500}
 											height={500}
 											alt='Picture of the author'
