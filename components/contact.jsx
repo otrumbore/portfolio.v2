@@ -96,12 +96,7 @@ const Contact = () => {
 								onSubmit={handleSubmit}
 								className='w-full lg:w-2/3 flex flex-col gap-6'
 							>
-								<Input
-									type='text'
-									id='name'
-									name='name'
-									placeholder='Your Name'
-								/>
+								<Input type='text' id='name' name='name' placeholder='Name' />
 								<Input
 									type='email'
 									id='email'
@@ -111,7 +106,7 @@ const Contact = () => {
 								<Textarea
 									id='message'
 									name='message'
-									placeholder='Type your message here...'
+									placeholder='Message...'
 								/>
 								<span className='w-full flex justify-end'>
 									<Button
