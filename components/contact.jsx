@@ -153,9 +153,15 @@ const Contact = () => {
 						<div className='w-full p-4 2xl:w-2/3 flex flex-col justify-center items-center'>
 							{(errors.name || errors.email || errors.message) && (
 								<div className='mb-8 w-full flex flex-col lg:max-w-[67%] bg-red-300 border border-black px-4 py-2 rounded-md'>
-									<span>{errors.name && errors.name}</span>
-									<span>{errors.email && errors.email}</span>
-									<span>{errors.message && errors.message}</span>
+									<span className='text-gray-800 text-lg'>
+										{errors.name && errors.name}
+									</span>
+									<span className='text-gray-800 text-lg'>
+										{errors.email && errors.email}
+									</span>
+									<span className='text-gray-800 text-lg'>
+										{errors.message && errors.message}
+									</span>
 								</div>
 							)}
 
@@ -202,7 +208,10 @@ const Contact = () => {
 											!(
 												contactData.name &&
 												contactData.email &&
-												contactData.message
+												contactData.message &&
+												!errors.name &&
+												!errors.email &&
+												!errors.message
 											)
 										}
 									>
