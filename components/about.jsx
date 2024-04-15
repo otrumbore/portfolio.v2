@@ -49,13 +49,13 @@ const About = () => {
 					</span>
 
 					<div className='w-full flex justify-center'>
-						<div className='w-full p-4 2xl:w-2/3'>
-							<p className='text-center mb-8 text-xl'>
+						<div className='w-full p-4 xl:w-10/12 2xl:w-10/12'>
+							<p className='text-center text-xl'>
 								Explore this section for additional insights into my background,
 								expertise, and current proficiencies, primarily focusing on
 								programming and technology.
 							</p>
-							<div className='w-full flex flex-col lg:flex-row lg:justify-between gap-6'>
+							<div className='w-full mt-12 flex flex-col lg:flex-row lg:justify-between gap-x-24 gap-y-8'>
 								<div className='w-full mb-8 lg:mb-0'>
 									<h5 className='text-2xl pb-4 font-bold'>Who I am!</h5>
 									<p className='text-xl'>
@@ -102,9 +102,9 @@ const About = () => {
 										{skills.map((skill) => (
 											<span
 												key={skill}
-												className='bg-gray-200 rounded-md text-gray-600 text-center py-3'
+												className='bg-gray-200 rounded-md text-gray-600 text-center py-3 px-2 xl:max-w-36'
 											>
-												{skill}
+												<p className='break-words'>{skill}</p>
 											</span>
 										))}
 									</div>
