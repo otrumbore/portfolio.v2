@@ -7,6 +7,7 @@ import SocialsDrawer from '../components/socialsDrawer';
 import Intro from '@/components/intro';
 import Footer from '../components/footer';
 import { Toaster } from '@/components/ui/toaster';
+import { Analytics } from '@vercel/analytics/react';
 
 const font = Roboto({ subsets: ['latin'], weight: ['400'] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
 				</main>
 				<Footer />
 				<Toaster />
+				<Analytics />
 			</body>
 		</html>
 	);
